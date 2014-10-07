@@ -225,8 +225,8 @@ if selected_platform in platform_list:
 
 	env["PROGSUFFIX"]=suffix+env["PROGSUFFIX"]
 	env["OBJSUFFIX"]=suffix+env["OBJSUFFIX"]
-	env["LIBSUFFIX"]=suffix+env["LIBSUFFIX"]
-	env["SHLIBSUFFIX"]=suffix+env["SHLIBSUFFIX"]
+	env["LIBSUFFIX"]=env["LIBSUFFIX"]
+	env["SHLIBSUFFIX"]=env["SHLIBSUFFIX"]
 
 	sys.path.remove("./platform/"+selected_platform)
 	sys.modules.pop('detect')
